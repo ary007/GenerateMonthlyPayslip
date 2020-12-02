@@ -3,10 +3,18 @@ package com.arijeet.model;
 import java.math.BigDecimal;
 
 public class Employee {
+
     private String name;
     private BigDecimal annualSalary;
-    private PaySlip paySlip;
     private String country;
+    private PaySlip paySlip;
+
+    public Employee(String name, BigDecimal annualSalary, String country) {
+        this.name = name;
+        this.annualSalary = annualSalary;
+        this.paySlip = paySlip;
+        this.country = country;
+    }
 
     public String getName() {
         return name;
